@@ -19,6 +19,7 @@
       <concept id="3508896775874421045" name="BlockPortConnector.structure.Connector" flags="ng" index="3Bc3CN" />
       <concept id="3508896775874421052" name="BlockPortConnector.structure.Block" flags="ng" index="3Bc3CU">
         <child id="3508896775874421055" name="connectors" index="3Bc3CT" />
+        <child id="3508896775874421053" name="blocks" index="3Bc3CV" />
         <child id="3508896775874421058" name="ports" index="3Bc3D4" />
         <child id="3508896775874466491" name="connects" index="3BccAX" />
       </concept>
@@ -36,12 +37,24 @@
       <node concept="1zpLho" id="51knFiqegTL" role="3Bc3CQ" />
       <node concept="1zpLho" id="51knFiqegTM" role="3Bc3CO" />
     </node>
-    <node concept="3Bc3CN" id="51knFiqegTS" role="3Bc3CT">
-      <property role="TrG5h" value="connector1" />
-    </node>
     <node concept="3Bc3CK" id="51knFiqegTV" role="3BccAX">
       <ref role="3Bc3CL" node="51knFiqegTS" resolve="connector1" />
       <ref role="3Bc3CZ" node="51knFiqegTL" />
+    </node>
+    <node concept="3Bc3CK" id="2W8HA3SB4PF" role="3BccAX">
+      <ref role="3Bc3CL" node="51knFiqegTS" resolve="connector1" />
+      <ref role="3Bc3CZ" node="2W8HA3SB4PB" />
+    </node>
+    <node concept="3Bc3CN" id="51knFiqegTS" role="3Bc3CT">
+      <property role="TrG5h" value="connector1" />
+    </node>
+    <node concept="3Bc3CU" id="2W8HA3SB4Pz" role="3Bc3CV">
+      <property role="TrG5h" value="child" />
+      <node concept="3Bc3CF" id="2W8HA3SB4P_" role="3Bc3D4">
+        <property role="TrG5h" value="childport" />
+        <node concept="1zpLho" id="2W8HA3SB4PA" role="3Bc3CQ" />
+        <node concept="1zpLho" id="2W8HA3SB4PB" role="3Bc3CO" />
+      </node>
     </node>
   </node>
 </model>
