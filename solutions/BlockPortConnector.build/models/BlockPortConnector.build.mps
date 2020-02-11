@@ -89,6 +89,9 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
+      <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
+        <reference id="1265949165890536425" name="module" index="L2wRA" />
+      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <child id="5253498789149547825" name="sources" index="3bR31x" />
@@ -116,7 +119,7 @@
     </language>
   </registry>
   <node concept="1l3spW" id="7ptuXdR5HW5">
-    <property role="TrG5h" value="bpc-dsl" />
+    <property role="TrG5h" value="BlockPortConnector" />
     <property role="2DA0ip" value="../.." />
     <node concept="10PD9b" id="7ptuXdR5HW6" role="10PD9s" />
     <node concept="3b7kt6" id="7ptuXdR5HW7" role="10PD9s" />
@@ -140,6 +143,9 @@
           <ref role="m_rDy" node="7ptuXdR5HWi" resolve="BlockPortConnector" />
           <node concept="pUk6x" id="7ptuXdR5HWy" role="pUk7w" />
         </node>
+      </node>
+      <node concept="L2wRC" id="1O1itf11kGL" role="39821P">
+        <ref role="L2wRA" node="4bHRYgqSFZ7" resolve="BlockPortConnector.build" />
       </node>
     </node>
     <node concept="m$_wf" id="7ptuXdR5HWi" role="3989C9">
