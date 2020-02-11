@@ -3,8 +3,8 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/BlockPortConnector/BlockPortConnector.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Sandbox/Sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/bpc-dsl.build/bpc-dsl.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/BlockPortConnector.Sandbox/BlockPortConnector.Sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/BlockPortConnector.build/BlockPortConnector.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

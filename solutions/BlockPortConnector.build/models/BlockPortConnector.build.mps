@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:0efadf31-fc4f-4802-9ec2-fb68d89deb7b(bpc-dsl.build)">
+<model ref="r:0efadf31-fc4f-4802-9ec2-fb68d89deb7b(BlockPortConnector.build)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -79,6 +79,9 @@
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -100,6 +103,7 @@
         <property id="2889113830911481881" name="deployFolderName" index="3ZfqAx" />
         <child id="8137134783396676835" name="location" index="1HemKq" />
       </concept>
+      <concept id="3189788309731840247" name="jetbrains.mps.build.mps.structure.BuildMps_Solution" flags="ng" index="1E1JtA" />
       <concept id="3189788309731840248" name="jetbrains.mps.build.mps.structure.BuildMps_Language" flags="ng" index="1E1JtD" />
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
         <property id="8369506495128725901" name="compact" index="BnDLt" />
@@ -142,7 +146,7 @@
       <property role="m$_wk" value="BlockPortConnector" />
       <node concept="3_J27D" id="7ptuXdR5HWj" role="m$_yQ">
         <node concept="3Mxwew" id="7ptuXdR5HWk" role="3MwsjC">
-          <property role="3MwjfP" value="bpc-dsl" />
+          <property role="3MwjfP" value="BlockPortConnector" />
         </node>
       </node>
       <node concept="3_J27D" id="7ptuXdR5HWl" role="m$_w8">
@@ -151,19 +155,67 @@
         </node>
       </node>
       <node concept="m$f5U" id="7ptuXdR5HWn" role="m$_yh">
-        <ref role="m$f5T" node="7ptuXdR5HWh" resolve="bpc-dsl" />
+        <ref role="m$f5T" node="7ptuXdR5HWh" resolve="BlockPortConnector" />
+      </node>
+      <node concept="m$_yB" id="4bHRYgqSG0U" role="m$_yh">
+        <ref role="m$_yA" node="4bHRYgqSFZ7" resolve="BlockPortConnector.build" />
       </node>
       <node concept="m$_yC" id="7ptuXdR5HWo" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
+      <node concept="m$_yC" id="4bHRYgqSG1o" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5HVSRHdVm9a" resolve="jetbrains.mps.build" />
+      </node>
       <node concept="3_J27D" id="7ptuXdR5HWp" role="m_cZH">
         <node concept="3Mxwew" id="7ptuXdR5HWq" role="3MwsjC">
-          <property role="3MwjfP" value="bpc-dsl" />
+          <property role="3MwjfP" value="BlockPortConnector" />
         </node>
       </node>
     </node>
     <node concept="2G$12M" id="7ptuXdR5HWh" role="3989C9">
-      <property role="TrG5h" value="bpc-dsl" />
+      <property role="TrG5h" value="BlockPortConnector" />
+      <node concept="1E1JtA" id="4bHRYgqSFZ7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="BlockPortConnector.build" />
+        <property role="3LESm3" value="4af8289a-2a94-435b-a0fb-faaee25165ff" />
+        <node concept="55IIr" id="4bHRYgqSFZa" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4bHRYgqSFZJ" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4bHRYgqSFZQ" role="2Ry0An">
+              <property role="2Ry0Am" value="BlockPortConnector.build" />
+              <node concept="2Ry0Ak" id="1O1itf10C3Y" role="2Ry0An">
+                <property role="2Ry0Am" value="BlockPortConnector.build.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4bHRYgqSG00" role="3bR37C">
+          <node concept="3bR9La" id="4bHRYgqSG01" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:78GwwOvB3tw" resolve="jetbrains.mps.ide.build" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="4bHRYgqSG06" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4bHRYgqSG07" role="1HemKq">
+            <node concept="55IIr" id="4bHRYgqSG02" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4bHRYgqSG03" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4bHRYgqSG04" role="2Ry0An">
+                  <property role="2Ry0Am" value="bpc-dsl.build" />
+                  <node concept="2Ry0Ak" id="4bHRYgqSG05" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4bHRYgqSG08" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtD" id="7ptuXdR5HWg" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="BlockPortConnector" />
