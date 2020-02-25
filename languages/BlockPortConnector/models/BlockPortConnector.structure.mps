@@ -86,7 +86,6 @@
   <node concept="1TIwiD" id="32M6Krnwy4W">
     <property role="EcuMT" value="3508896775874421052" />
     <property role="TrG5h" value="Block" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="1nGC63QGrGw" resolve="Entity" />
     <node concept="1TJgyj" id="32M6Krnwy52" role="1TKVEi">
       <property role="IQ2ns" value="3508896775874421058" />
@@ -94,34 +93,6 @@
       <property role="20kJfa" value="ports" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="32M6Krnwy4H" resolve="Port" />
-    </node>
-    <node concept="1TJgyj" id="32M6Krnwy4X" role="1TKVEi">
-      <property role="IQ2ns" value="3508896775874421053" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="blocks" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="32M6Krnwy4W" resolve="Block" />
-    </node>
-    <node concept="1TJgyj" id="1nGC63QGHk3" role="1TKVEi">
-      <property role="IQ2ns" value="1579813907616421123" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="collections" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1nGC63QGHjX" resolve="Collection" />
-    </node>
-    <node concept="1TJgyj" id="32M6Krnwy4Z" role="1TKVEi">
-      <property role="IQ2ns" value="3508896775874421055" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connectors" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="32M6Krnwy4P" resolve="Connector" />
-    </node>
-    <node concept="1TJgyj" id="32M6KrnwHaV" role="1TKVEi">
-      <property role="IQ2ns" value="3508896775874466491" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="relations" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1nGC63QGrJb" resolve="Relation" />
     </node>
   </node>
   <node concept="25R3W" id="1nGC63QGqC1">
@@ -190,6 +161,40 @@
       <property role="20kJfa" value="relations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1nGC63QGsbM" resolve="RelationRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1nGC63QGO9U">
+    <property role="EcuMT" value="1579813907616449146" />
+    <property role="TrG5h" value="ContainerBlock" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" node="32M6Krnwy4W" resolve="Block" />
+    <node concept="1TJgyj" id="1nGC63QGO9V" role="1TKVEi">
+      <property role="IQ2ns" value="1579813907616449147" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="blocks" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="32M6Krnwy4W" resolve="Block" />
+    </node>
+    <node concept="1TJgyj" id="1nGC63QGO9X" role="1TKVEi">
+      <property role="IQ2ns" value="1579813907616449149" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="collections" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1nGC63QGHjX" resolve="Collection" />
+    </node>
+    <node concept="1TJgyj" id="1nGC63QGOa0" role="1TKVEi">
+      <property role="IQ2ns" value="1579813907616449152" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="connectors" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="32M6Krnwy4P" resolve="Connector" />
+    </node>
+    <node concept="1TJgyj" id="1nGC63QGOa4" role="1TKVEi">
+      <property role="IQ2ns" value="1579813907616449156" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="relations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1nGC63QGrJb" resolve="Relation" />
     </node>
   </node>
 </model>
