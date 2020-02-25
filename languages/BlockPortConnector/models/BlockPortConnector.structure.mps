@@ -53,23 +53,17 @@
   <node concept="1TIwiD" id="32M6Krnwy4H">
     <property role="EcuMT" value="3508896775874421037" />
     <property role="TrG5h" value="Port" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2W8HA3SAY4m" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="1nGC63QGrGw" resolve="Entity" />
   </node>
   <node concept="1TIwiD" id="32M6Krnwy4P">
     <property role="EcuMT" value="3508896775874421045" />
     <property role="TrG5h" value="Connector" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2W8HA3SB4zq" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="1nGC63QGrGw" resolve="Entity" />
   </node>
   <node concept="1TIwiD" id="32M6Krnwy4Q">
     <property role="EcuMT" value="3508896775874421046" />
     <property role="TrG5h" value="Connects" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1nGC63QGrJb" resolve="Relation" />
     <node concept="1TJgyj" id="32M6Krnwy4R" role="1TKVEi">
       <property role="IQ2ns" value="3508896775874421047" />
       <property role="20kJfa" value="connector" />
@@ -92,7 +86,7 @@
     <property role="EcuMT" value="3508896775874421052" />
     <property role="TrG5h" value="Block" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1nGC63QGrGw" resolve="Entity" />
     <node concept="1TJgyj" id="32M6Krnwy52" role="1TKVEi">
       <property role="IQ2ns" value="3508896775874421058" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -117,12 +111,9 @@
     <node concept="1TJgyj" id="32M6KrnwHaV" role="1TKVEi">
       <property role="IQ2ns" value="3508896775874466491" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connects" />
+      <property role="20kJfa" value="relations" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="32M6Krnwy4Q" resolve="Connects" />
-    </node>
-    <node concept="PrWs8" id="51knFiqegU1" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="20lvS9" node="1nGC63QGrJb" resolve="Relation" />
     </node>
   </node>
   <node concept="25R3W" id="1nGC63QGqC1">
@@ -135,6 +126,42 @@
     <node concept="25R33" id="1nGC63QGqC3" role="25R1y">
       <property role="3tVfz5" value="1579813907616344579" />
       <property role="TrG5h" value="External" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1nGC63QGrGw">
+    <property role="EcuMT" value="1579813907616348960" />
+    <property role="TrG5h" value="Entity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1nGC63QGrGx" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1nGC63QGrJb">
+    <property role="EcuMT" value="1579813907616349131" />
+    <property role="TrG5h" value="Relation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="1nGC63QGrJd" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1nGC63QGsbM">
+    <property role="EcuMT" value="1579813907616350962" />
+    <property role="TrG5h" value="RelationRef" />
+    <node concept="1TJgyj" id="1nGC63QGsbN" role="1TKVEi">
+      <property role="20lbJX" value="fLJekj4/1" />
+      <property role="IQ2ns" value="1579813907616350963" />
+      <property role="20kJfa" value="relation" />
+      <ref role="20lvS9" node="1nGC63QGrJb" resolve="Relation" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1nGC63QGsbS">
+    <property role="EcuMT" value="1579813907616350968" />
+    <property role="TrG5h" value="EntityRef" />
+    <node concept="1TJgyj" id="1nGC63QGsbT" role="1TKVEi">
+      <property role="20lbJX" value="fLJekj4/1" />
+      <property role="IQ2ns" value="1579813907616350969" />
+      <property role="20kJfa" value="entity" />
+      <ref role="20lvS9" node="1nGC63QGrGw" resolve="Entity" />
     </node>
   </node>
 </model>

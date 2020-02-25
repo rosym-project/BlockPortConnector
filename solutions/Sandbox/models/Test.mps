@@ -34,11 +34,13 @@
     </node>
     <node concept="3Bc3CK" id="51knFiqegTV" role="3BccAX">
       <property role="3zngDA" value="1nGC63QGqC3/External" />
+      <property role="TrG5h" value="connector1-childport" />
       <ref role="3Bc3CL" node="51knFiqegTS" resolve="connector1" />
       <ref role="3Bc3CZ" node="2W8HA3SB4P_" resolve="childport" />
     </node>
     <node concept="3Bc3CK" id="2W8HA3SB4PF" role="3BccAX">
       <property role="3zngDA" value="1nGC63QGqC2/Internal" />
+      <property role="TrG5h" value="connector1-port1" />
       <ref role="3Bc3CL" node="51knFiqegTS" resolve="connector1" />
       <ref role="3Bc3CZ" node="51knFiqegTK" resolve="port1" />
     </node>
